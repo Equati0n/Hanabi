@@ -1,9 +1,9 @@
-# Hanabi 适配Xcode 14.0 和Apple Silicon Mac
-libsubstitute改为静态库形式使用，编译自[https://github.com/PoomSmart/substitute](https://github.com/PoomSmart/substitute)，编译了arm64和x86_64两种架构
+# Hanabi fits Xcode 14.0 and Apple Silicon Mac
+libsubstitute is used as a static library,compiled from[https://github.com/PoomSmart/substitute](https://github.com/PoomSmart/substitute),compiled arm64 and x86_64 architectures.
 
-增加了New Pass Manager的Hook
+Add New Pass Manager Hook
 
-LLVM Pass可以从[https://github.com/dbmz502/Hikari-LLVM15](https://github.com/dbmz502/Hikari-LLVM15)获取，移植到[swift llvm 5.7](https://github.com/apple/llvm-project/tree/swift/release/5.7)再配合这个仓库编译即可
+LLVM Pass can be obtained from[https://github.com/dbmz502/Hikari-LLVM15](https://github.com/dbmz502/Hikari-LLVM15),is migrated to[swift llvm 5.7](https://github.com/apple/llvm-project/tree/swift/release/5.7)can compile with this repository.
 
 # Hanabi
 Hassle-free Obfuscator-Enabled Apple Clang without any sort of compromise.
