@@ -1,11 +1,10 @@
-# Hanabi fits Xcode 14.0-14.3 and Apple Silicon Mac
-libsubstitute is used as a static library,compiled from[https://github.com/PoomSmart/substitute](https://github.com/PoomSmart/substitute),compiled arm64 and x86_64 architectures.
+# 花火 适配Xcode 14.0 和Apple Silicon Mac
+将使用substitute改为使用[Dobby](https://github.com/jmpews/Dobby)
 
-Add New Pass Manager Hook
+增加了New Pass Manager的Hook
 
-LLVM Pass can be obtained from[https://github.com/dbmz502/Hikari-LLVM15](https://github.com/dbmz502/Hikari-LLVM15),is migrated to[swift llvm 5.7](https://github.com/apple/llvm-project/tree/swift/release/5.7)can compile with this repository.
-
-# Hanabi
+LLVM Pass可以从[https://github.com/61bcdefg/Hikari-LLVM15-Core](https://github.com/61bcdefg/Hikari-LLVM15-Core) [https://github.com/61bcdefg/Hikari-LLVM15-Headers](https://github.com/61bcdefg/Hikari-LLVM15-Headers)获取，移植到对应的swift llvm再配合这个仓库编译即可
+# 花火
 Hassle-free Obfuscator-Enabled Apple Clang without any sort of compromise.
 
 ![Demo](https://github.com/HikariObfuscator/Hanabi/blob/master/Demo.jpg?raw=true)
@@ -23,7 +22,7 @@ Due to its hackish nature (Which is why I don't want to do this in the first pla
 - ``${LLVM_BUILD_PATH}`` The path you prepare to build in. Note that you need a seperate folder and must not reuse existing build for upstream Hikari
 
 ## Obtaining Source
-- ``git clone https://github.com/dbmz502/Hanabi.git $(LLVM_SOURCE_PATH)/projects/``
+- ``git clone https://github.com/61bcdefg/Hanabi.git $(LLVM_SOURCE_PATH)/projects/``
 - Under ``$(LLVM_SOURCE_PATH)``, run ``git submodule update --init --recursive --remote`` to make sure submodules are fully updated
 
 ## Build
@@ -51,5 +50,6 @@ You need to build ``https://github.com/alexzielenski/optool`` and put it in your
 
 # Credits
 
+- Thanks to [@AloneMonkey](https://github.com/AloneMonkey) for compiling substitute and ship it with his amazing project [MonkeyDev](https://github.com/AloneMonkey/MonkeyDev/blob/master/MFrameworks/libsubstitute.dylib)
 - Thanks to [@UESTC-LXY](https://github.com/UESTC-LXY) for testing and discussion because I didn't bother to do so.
 - Thanks to[@qokelate](https://github.com/qokelate) for initially discovering the broken CMake script and testing the new fix as well as suggestions to this README
