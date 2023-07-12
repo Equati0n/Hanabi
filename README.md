@@ -1,4 +1,4 @@
-# Hanabi fits Xcode 14.0 and Apple Silicon Mac
+# Hanabi fits Xcode 14.0-14.3 and Apple Silicon Mac
 libsubstitute is used as a static library,compiled from[https://github.com/PoomSmart/substitute](https://github.com/PoomSmart/substitute),compiled arm64 and x86_64 architectures.
 
 Add New Pass Manager Hook
